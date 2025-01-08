@@ -16,12 +16,12 @@ const companySchema = new mongoose.Schema({
         type:String 
     },
     logo:{
-        type:String // URL to company logo
+        type:String 
     },
     userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true
     }
-},{timestamps:true})
+},{timestamps:true}) //adjust the scheme
 export const Company = mongoose.model("Company", companySchema);
