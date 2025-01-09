@@ -11,5 +11,6 @@ const applicationSlice = createSlice({
         }
     }
 });
+// add slices for the authStore
 export const {setAllApplicants} = applicationSlice.actions;
 export default applicationSlice.reducer;
